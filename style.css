@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #121212;
+  color: #828282;
+}
+.head{
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  margin: 3rem 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+ padding: 0 2rem;;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+  justify-content: center;
+
+}
+
+.nav-link {
+  color: #828282;
+  text-decoration: none;
+
+  font-size: 1.3rem;
+}
+
+.hireMeBtn {
+  font-size: 1rem;
+  padding: 8px 20px;
+  background-color: #FD6F00;
+  color: #ffff;
+  border: 2px solid #FD6F00;
+  border-radius: 8px;
+  font-weight: 200;
+  font-size: 1.2rem;
+
+}
+
+.home {
+  display: flex;
+  padding: 4rem 2rem;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.profession {
+  font-weight: 800;
+  font-size: 3rem;
+  color: #FD6F00;
+}
+
+.headerBtn {
+  display: flex;
+  gap: 0.8rem;
+}
+.socialContainer{
+  display: flex;
+  gap: 1.2rem;
+}
+.socilaLink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1.5px solid #828282;
+  border-radius: 50%;
+}
+
+.btnCV {
+  padding: 8px 22px;
+  color: #828282;
+  background-color: transparent;
+  border: 2px solid #828282;
+  border-radius: 8px;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.rating {
+  background-color: #1B1B1B;
+  display: flex;
+  border-radius: 8px;
+  padding: 1rem 0;
+  justify-content: center;
+  width: fit-content;
+}
+
+.rateCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #ffff;
+  padding: 0 1.4rem;
+  gap: 1.2rem;
+}
+
+.rateCard:last-child {
+  border-right: none;
+}
+
+.rate {
+  color: #FD6F00;
+}
+
+.profileImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+  position: relative;
+    z-index: 1;
+  width: 100vw;
+  
+}
+.profileImg img{
+  width: 200px;
+  z-index: 1;
+}
+.slidBg{
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #1B1B1B;
+}
+
+/* services */
+.Services {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+.servicesHead{
+  display: flex;
+  flex-direction: column;
+    align-self: center;
+    gap: 1.2rem;
+}
+.servicesHead h2{
+  align-self: center;
+}
+.servicesContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+}
+.serviceCard{
+  background-color: #1B1B1B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+.serviceCard > span:nth-child(2){
+  color: #FD6F00;
+  font-weight: 700;
+}
+
+/* ABOUT */
+.about{
+  padding: 3rem 0;
+}
+.aboutHead{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.aboutContent{
+  display: flex;
+  gap: 3rem;
+}
+.aboutImg{
+  flex-basis: 50%;
+}
+.aboutText{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+          
+.DCV{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: fit-content;
+  padding: 8px 22px;
+  color: #ffff;
+  background-color: #FD6F00;
+  border: 2px solid #FD6F00;
+  border-radius: 8px;
+  font-weight: 200;
+  font-size: 1.4rem;
+}
+
+            /* portfolio */
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+
+.portfolioHead{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+.categories{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.8rem;
+}
+
+
+.catLink{
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 20px;
+  background-color: #1B1B1B;
+  color: #828282;
+  border: 2px solid #1B1B1B;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.projectsContainer{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+.projectCard{
+
+  height: 300px;
+  background-color: #828282;
+  border-radius: 8px;
+}
+.projectCard a{
+  display: flex;
+  flex-direction: column;
+  color: #828282;
+  text-decoration: none;
+ 
+ 
+}
+.cardImg{
+  object-fit: cover;
+  height: auto;
+
+}
+.projectName{
+  padding: 15px 4px;
+  background-color: #1B1B1B;
+  width: 100%;
+  border-radius: 8px;
+
+}
+
+.contactMe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  gap: 2rem;
+}
+.contactHead{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.form{
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.left,
+.right{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+input{
+  background-color: #1B1B1B;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+}
+textarea{
+  background-color: #1B1B1B;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  resize: vertical;
+  height: 120px;
+}
+.submitBtn{
+  background-color: transparent;
+  color: #828282;
+  padding: 8px 20px;
+  align-self: end;
+  border-radius: 8px;
+  border: 1.5px solid #828282;
+}
+
+/* footer */
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-list-footer{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1.2rem;
+  justify-content: center; 
+}
+
+.reachMe{
+  display: flex;
+  gap: 1.2rem;
+}
+.mail,
+.numb{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+@media screen and (max-width: 400px){
+
+  .container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0 ;
+  }
+  .nav-list{
+    display: none;
+  }
+    
+  .home{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 2rem;
+  }
+  .headerText{
+    align-items: center;
+  }
+  .name {
+  align-items: center;
+  }
+  .profession{
+    text-align: center;
+  }
+  .slidBg{
+    width: 323px;
+    height: 323px;
+  }
+
+  .rateCard {
+  padding: 0 1rem;
+  gap: 1rem;
+  }
+  .aboutContent{
+    flex-direction: column; 
+  }
+  .aboutText{
+    align-items: center;
+  }
+
+
+  /* about */
+  .form{
+    flex-direction: column;
+    display: flex;
+    width: 100%; 
+  }
+  .submitBtn{
+    align-self: center;
+  }
+
+  /* footer */
+
+  .reachMe{
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
