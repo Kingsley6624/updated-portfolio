@@ -33,6 +33,9 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+.menu{
+  display: none;
+}
 
 .nav-list {
   display: flex;
@@ -63,7 +66,8 @@ nav {
 
 .home {
   display: flex;
-  padding: 4rem 2rem;
+  padding: 4rem 0;
+  justify-content: space-between;
 }
 
 .headerText {
@@ -383,12 +387,15 @@ textarea{
 @media screen and (max-width: 400px){
 
   .container {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  padding: 0 ;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0;
   }
+  .menu{
+    display: block;
+}
   .nav-list{
     display: none;
   }
@@ -403,7 +410,7 @@ textarea{
     align-items: center;
   }
   .name {
-  align-items: center;
+    align-items: center;
   }
   .profession{
     text-align: center;
@@ -414,8 +421,8 @@ textarea{
   }
 
   .rateCard {
-  padding: 0 1rem;
-  gap: 1rem;
+    padding: 0 1rem;
+    gap: 1rem;
   }
   .aboutContent{
     flex-direction: column; 
