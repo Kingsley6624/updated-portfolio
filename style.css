@@ -275,19 +275,23 @@ nav {
   font-weight: 400;
   font-size: 1rem;
 }
+.catLink:hover,
+.catLink:active{
+  background: #FD6F00;
+  color: #fff;
+}
 .projectsContainer{
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
   justify-content: center;
 }
 .projectCard{
-
-  height: 300px;
   background-color: #828282;
   border-radius: 8px;
 }
+
 .projectCard a{
   display: flex;
   flex-direction: column;
@@ -297,16 +301,22 @@ nav {
  
 }
 .cardImg{
+  width: 100%;
   object-fit: cover;
   height: auto;
-
+  border-radius: 8px 8px 0 0;
+}
+.cardImg:hover,
+.cardImg:hover{
+  opacity: 0.5;
 }
 .projectName{
+  font-weight: 800;
   padding: 15px 4px;
   background-color: #1B1B1B;
   width: 100%;
-  border-radius: 8px;
-
+  border-radius: 0 0 8px 8px ;
+  text-align: center;
 }
 
 .contactMe{
