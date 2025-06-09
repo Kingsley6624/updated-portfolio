@@ -6,6 +6,15 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,6 +30,13 @@ body {
   background-color: #121212;
   color: #828282;
 }
+h2{
+  font-size: 2rem;
+}
+.subHeader{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
 
 .head {
   color: #fff;
@@ -31,10 +47,16 @@ body {
   margin: 3rem 3%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   padding: 0 2rem;
-  ;
 }
+
+header{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 
 nav {
   display: flex;
@@ -64,8 +86,14 @@ nav {
 .nav-link {
   color: #828282;
   text-decoration: none;
-
   font-size: 1.3rem;
+  transition: ease 0;
+}
+.active{
+  color: #fff;
+  border-bottom: 3px solid #FD6F00;
+  border-radius: 8px;
+  padding: 3px;
 }
 
 .hireMeBtn {
@@ -82,24 +110,25 @@ nav {
 
 .home {
   display: flex;
-  padding: 4rem 0;
+  padding: 3rem 0;
   justify-content: space-between;
+  justify-self: center;
 }
 
 .headerText {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
-.name {
+.name{
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
 
-.profession {
+.profession{
   font-weight: 800;
   font-size: 3rem;
   color: #FD6F00;
@@ -115,28 +144,6 @@ nav {
   gap: 1.2rem;
 }
 
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-
-  25% {
-    transform: translateX(-3px);
-  }
-
-  50% {
-    transform: translateX(3px);
-  }
-
-  75% {
-    transform: translateX(-3px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .socialLink {
   display: flex;
   align-items: center;
@@ -146,16 +153,13 @@ nav {
   border-radius: 50%;
 }
 
-
-
-
 .btnCV {
   padding: 8px 22px;
   color: #828282;
   background-color: transparent;
   border: 2px solid #828282;
   border-radius: 8px;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.2rem;
 }
 
@@ -213,13 +217,13 @@ nav {
   background-color: #1B1B1B;
 }
 
-/* services */
+          /* services */
+
 .Services {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 3rem 0;
-  height: 100vh;
   justify-content: center;
 }
 
@@ -227,7 +231,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-self: center;
-  gap: 1.2rem;
+  gap: 3rem;
 }
 
 .servicesHead h2 {
@@ -256,16 +260,21 @@ nav {
   font-weight: 700;
 }
 
-/* ABOUT */
+        /* ABOUT */
+
+
 .about {
   padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .aboutHead {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 3rem;
 }
 
 .aboutContent {
@@ -296,8 +305,9 @@ nav {
   background-color: #FD6F00;
   border: 2px solid #FD6F00;
   border-radius: 8px;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.4rem;
+  text-decoration: none;
 }
 
 /* portfolio */
@@ -306,8 +316,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-
+  gap: 3rem;
+  padding: 3rem 0;
 }
 
 
@@ -315,7 +325,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.2rem;
+  gap: 3rem;
 }
 
 .categories {
@@ -355,6 +365,9 @@ nav {
   background-color: transparent;
   border-radius: 8px;
 }
+.projectCard:hover {
+  animation: shake 0.5s ease-in-out;
+}
 
 .projectCard a {
   display: flex;
@@ -385,6 +398,7 @@ nav {
   border-radius: 0 0 8px 8px;
   text-align: center;
 }
+      /* Hire me */
 
 .contactMe {
   display: flex;
@@ -440,6 +454,11 @@ textarea {
   border-radius: 8px;
   border: 1.5px solid #828282;
 }
+.submitBtn:hover{
+  background: #FD6F00;
+  color: #fff;
+  border: none;
+}
 
 /* footer */
 .footer {
@@ -447,6 +466,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  padding: 3rem 0;
 }
 
 .nav-list-footer {
@@ -479,6 +499,7 @@ textarea {
     gap: 4rem;
     padding: 1.2rem;
   }
+ 
 
   .menu {
     display: block;
@@ -491,7 +512,7 @@ textarea {
   .home {
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding: 2rem 0;
     gap: 2rem;
   }
 
