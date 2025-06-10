@@ -1,4 +1,5 @@
 const navLink = document.querySelectorAll(".nav-link");
+const form = document.querySelector('.form');
 
 navLink.forEach((link) =>{
   link.addEventListener('mouseover', function() {

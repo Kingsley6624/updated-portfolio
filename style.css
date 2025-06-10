@@ -120,6 +120,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   gap: 3rem;
+  flex-basis: 50%;
 }
 
 .name{
@@ -148,9 +149,24 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
-  border: 1.5px solid #828282;
+  padding: 10px;
+  border: 2px solid #828282;
   border-radius: 50%;
+  text-decoration: none;
+}
+.socialLink:hover {
+  animation: shake 0.5s ease-in-out;
+  background: #FD6F00;
+    border: #FD6F00;
+    
+}
+.socialLink i{
+  font-size: 2rem;
+  color: #828282;
+}
+.socialLink i:hover{
+  color: #fff;
+
 }
 
 .btnCV {
@@ -163,9 +179,7 @@ nav {
   font-size: 1.2rem;
 }
 
-.socialLink:hover {
-  animation: shake 0.5s ease-in-out;
-}
+
 
 .rating {
   background-color: #1B1B1B;
@@ -258,6 +272,11 @@ nav {
 .serviceCard>span:nth-child(2) {
   color: #FD6F00;
   font-weight: 700;
+}
+.servicesIcon i{
+  color: #FD6F00;
+  font-weight: 900;
+  font-size: 3rem;
 }
 
         /* ABOUT */
