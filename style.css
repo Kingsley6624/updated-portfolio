@@ -219,15 +219,17 @@ nav {
 }
 
 .profileImg img {
-  width: 200px;
+  width: 300px;
   z-index: 1;
 }
 
 .slidBg {
-  width: 450px;
+  width: 90%;
   height: 450px;
-  border-radius: 50%;
+  border: 1px solid #828282;
+  border-radius: 8%;
   position: absolute;
+  top: 10%;
   background-color: #1B1B1B;
 }
 
@@ -298,15 +300,14 @@ nav {
 
 .aboutContent {
   display: flex;
+  flex-direction: column;
   gap: 3rem;
 }
 
-.aboutImg {
-  flex-basis: 50%;
-}
+
 
 .aboutText {
-  flex-basis: 50%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -315,6 +316,7 @@ nav {
 
 
 .DCV {
+  align-self: center;
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -515,7 +517,7 @@ textarea {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 0rem;
     padding: 1.2rem;
   }
  
@@ -547,9 +549,15 @@ textarea {
     text-align: center;
   }
 
+  .profileImg img {
+  width: 250px;
+
+}
+
   .slidBg {
-    width: 323px;
-    height: 323px;
+    /* width: 350px; */
+    height: 350px;
+    top: 16%;
   }
 
   .rateCard {
