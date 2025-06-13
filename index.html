@@ -15,15 +15,28 @@
   <div class="container">
     <header>
       <nav class="nav-bar">
-        <div class="menu"><img src="./images/align-justify.svg" alt=""></div>
-        <a href="#home" class="log">SANCHOSLEY</a>
-        <ul class="nav-list">
+
+        <ul class="nav-list sidebar">
+          <span class="closemenu"><i class="fa-solid fa-xmark" onclick="closeSideMenu()"></i></span>
           <li class="list-item"><a href="#home" class="active nav-link">Home</a></li>
           <li class="list-item"><a href="#services" class="nav-link">Services</a></li>
           <li class="list-item"><a href="#aboutMe" class="nav-link">About me</a></li>
           <li class="list-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li class="list-item"><a href="#contactMe" class="nav-link">Hire Me</a></li>
+          
         </ul>
-        <button onclick="window.location.href='#contactMe'" class="hireMeBtn">Hire Me</button>
+        
+        <ul class="nav-list">
+          <a href="#" class="log">SANCHOS</a>
+          <li class="list-item hideonmobile"><a href="#home" class="active nav-link">Home</a></li>
+          <li class="list-item hideonmobile"><a href="#services" class="nav-link">Services</a></li>
+          <li class="list-item hideonmobile"><a href="#aboutMe" class="nav-link">About me</a></li>
+          <li class="list-item hideonmobile"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li class="list-item hideonmobile hideonmobile"><a href="#contactMe" class="nav-link">Hire Me</a></li>
+          <div class="menu"><img src="./images/align-justify.svg" alt="" onclick="showSideBar()"></div>
+        </ul>
+        
+
       </nav>
       <div class="home" id="home">
         <div class="headerText">
@@ -42,7 +55,7 @@
           </div>
         </div>
         <div class="profileImg">
-          <img src="./images/profile-img.png" alt="profile image">
+          <img src="./images/profile-img2.png" alt="profile image">
           <div class="slidBg"></div>
         </div>
       </div>
@@ -196,7 +209,7 @@
 
     </section>
     <section class="footer" id="footer">
-      <a href="#home" class="log">SANCHOSLEY</a>
+      <a href="#home" class="log">SANCHOS</a>
       <nav>
         <ul class="nav-list-footer">
           <li class="list-item"><a href="#home" class="nav-link">Home</a></li>

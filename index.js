@@ -8,3 +8,15 @@ navLink.forEach((link) =>{
     this.classList.add('active');
   });
 });
+
+const showSideBar = ()=>{
+  const sidebar = document.querySelector(".sidebar")
+  sidebar.style.display= 'flex'
+}
+
+const closeSideMenu = ()=>{
+  const sidebar = document.querySelector(".sidebar")
+  if(sidebar){
+    sidebar.style.display="none" 
+  }
+}

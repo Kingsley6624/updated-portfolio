@@ -29,6 +29,7 @@ body {
   font-family: "Lato", sans-serif;
   background-color: #121212;
   color: #828282;
+  margin: auto;
 }
 h2{
   font-size: 2rem;
@@ -44,11 +45,15 @@ h2{
 }
 
 .container {
-  margin: 3rem 3%;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
-  padding: 0 2rem;
+
 }
 
 header{
@@ -59,9 +64,7 @@ header{
 
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
 }
 
 .menu {
@@ -73,22 +76,58 @@ nav {
   color: #fff;
   font-weight: 700;
   font-size: 1.5rem;
+  margin-right: auto;
+ 
 }
 
 .nav-list {
+  width: 100%;
   display: flex;
   list-style: none;
-  gap: 1.8rem;
-  justify-content: center;
-
+  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+.list-item{
+  height: 50px;
 }
 
 .nav-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
   color: #828282;
   text-decoration: none;
   font-size: 1.3rem;
   transition: ease 0;
 }
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1.2rem;
+}
+.sidebar .list-item .nav-link,
+.sidebar .list-item{
+  width: 100%;
+}
+.closemenu{
+  font-size: 1.6rem;
+}
+
+
+
 .active{
   color: #fff;
   border-bottom: 3px solid #FD6F00;
@@ -108,10 +147,11 @@ nav {
 
 }
 
+
 .home {
   display: flex;
   padding: 3rem 0;
-  gap: 3rem;
+  gap: 2rem;
   justify-content: space-between;
   justify-self: center;
 }
@@ -213,26 +253,19 @@ nav {
   align-items: center;
   justify-content: center;
   flex-basis: 50%;
-  position: relative;
+
   z-index: 1;
-  width: 100vw;
+  /* width: 100vw; */
 
 }
 
 .profileImg img {
-  width: 300px;
-  z-index: 1;
+  width: 100%;
+  min-width: 200px;
+  border-radius: 50%;
 }
 
-.slidBg {
-  width: 100%;
-  height: 450px;
-  border: 1px solid #828282;
-  border-radius: 8%;
-  position: absolute;
-  top: 10%;
-  background-color: #1B1B1B;
-}
+
 
           /* services */
 
@@ -308,11 +341,13 @@ nav {
 
 
 .aboutText {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.2rem;
+}
+.aboutText p{
+  font-size: 1.2rem;
 }
 
 
@@ -512,25 +547,57 @@ textarea {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 830px) {
+   
+  .hideonmobile{
+    display: none;
+  }
+  .menu {
+  display: block;
+}
+  .container {
+      /* padding: 2rem; */
+      gap: 0rem;
+    }
+
+    .home{
+      gap: 1rem;
+    }
+
+    .profession {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+    .profileImg img {
+ 
+    }
+}
+@media screen and (max-width: 690px) {
+
+   .home {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 2rem;
+  } 
+  .headerText{
+    align-items: center;
+  }
+  .profileImg img {
+    max-width: 350px;
+
+}
+
+}
+@media screen and (max-width: 426px) {
 
   .container {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0rem;
     padding: 1.2rem;
   }
  
-
-  .menu {
-    display: block;
-  }
-
-  .nav-list {
-    display: none;
-  }
-
   .home {
     flex-direction: column;
     align-items: center;
@@ -548,18 +615,14 @@ textarea {
 
   .profession {
     text-align: center;
+    font-size: 2rem;
   }
 
   .profileImg img {
-  width: 250px;
+    /* width: 330px; */
 
 }
 
-  .slidBg {
-    /* width: 350px; */
-    height: 350px;
-    top: 16%;
-  }
 
   .rateCard {
     padding: 0 1rem;
